@@ -1,0 +1,55 @@
+//- index.pug
+doctype html
+html
+  head
+    title Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+      ul 
+        #logo 
+            img(src="/static/img/logo.png", alt="", srcset="")
+            |DAC
+        li #[a(href='/') Home]
+        li #[a(href='/') About]
+        li #[a(href='/') Contact]
+        li #[a(href='/') Services]
+    section#introSection 
+        div DANCE ACADEMY
+        div.small LIVE DANCE REPEAT
+    section#missionSection 
+        h2 Our mission
+        .card 
+            h3 Dance amazing
+            .card-box 
+                .card-img 
+                    img(src="/static/img/1.png")
+                .card-content 
+                    p This is the best dance academy
+        .card 
+            h3 Dance beautiful
+            .card-box 
+                .card-img 
+                    img(src="/static/img/2.png")
+                .card-content 
+                    p This is the best dance academy
+        .card 
+            h3 Dance gorgeous
+            .card-box 
+                .card-img 
+                    img(src="/static/img/3.png")
+                .card-content 
+                    p This is the best dance academy
+    section#sponsorSection 
+        h2 Our sponsors
+        div#sponsors 
+            img(src="/static/img/logo1.png", alt="sponsor image", class="sp",srcset="")
+            img(src="/static/img/logo2.png", alt="sponsor image", class="sp",srcset="")
+            img(src="/static/img/logo3.png", alt="sponsor image", class="sp",srcset="")
+            img(src="/static/img/logo4.png", alt="sponsor image", class="sp",srcset="")
+
+    footer#footer 
+        | Copyright &copy;2022 DANCE ACADEMY
+    script
+      include ../static/index.js

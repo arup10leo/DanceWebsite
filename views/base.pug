@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Dance Academy
+    block script 
+    block style
+  body
+    nav#navbar.top 
+      ul 
+        #logo 
+            img(src="/static/img/logo.png", alt="", srcset="")
+            |DAC
+        li #[a(href='/') Home]
+        li #[a(href='/') About]
+        li #[a(href='/contact') Contact]
+        li #[a(href='/') Services]
+        
+    block content
+    footer#footer 
+        | Copyright &copy;2022 DANCE ACADEMY
+    

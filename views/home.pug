@@ -1,0 +1,45 @@
+extends base.pug
+block script
+  script(src='/static/index.js')
+  
+ 
+block style
+   style
+      include ../static/style.css
+
+
+block content 
+    
+    section#introSection 
+        div DANCE ACADEMY
+        div.small LIVE DANCE REPEAT
+    section#missionSection 
+        h2 Our mission
+        .card 
+            h3 Dance amazing
+            .card-box 
+                .card-img 
+                    img(src="/static/img/1.png")
+                .card-content 
+                    p This is the best dance academy
+        .card 
+            h3 Dance beautiful
+            .card-box 
+                .card-img 
+                    img(src="/static/img/2.png")
+                .card-content 
+                    p This is the best dance academy
+        .card 
+            h3 Dance gorgeous
+            .card-box 
+                .card-img 
+                    img(src="/static/img/3.png")
+                .card-content 
+                    p This is the best dance academy
+    section#sponsorSection 
+        h2 Our sponsors
+        div#sponsors 
+            img(src="/static/img/logo1.png", alt="sponsor image", class="sp",srcset="")
+            img(src="/static/img/logo2.png", alt="sponsor image", class="sp",srcset="")
+            img(src="/static/img/logo3.png", alt="sponsor image", class="sp",srcset="")
+            img(src="/static/img/logo4.png", alt="sponsor image", class="sp",srcset="")
